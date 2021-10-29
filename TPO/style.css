@@ -1,0 +1,520 @@
+*{
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;  
+    
+     }   
+.logo {
+    max-width: 8rem;
+    max-height: 8rem;
+    position:static;
+
+}
+.logo:hover {
+    max-width: 4rem;
+    max-height: 4rem;
+    position:static;
+    transition: all 1s ease-in;
+    transform: rotate(360deg);
+}
+body {
+        background: #1D202B;
+        color: #fff;
+        font-family: 'Amatic SC', 'Roboto', sans-serif;
+    }
+.nombre {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px 1px;
+    text-align: center;
+
+
+        
+    }
+    a {color: white;}
+    .contenedor {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+
+    /*
+        display: flex;
+        gap: 15px;*/
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+        
+    
+        
+    }
+    
+    .titulo {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+    
+    .contenedor-menu {
+       
+       /* width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; */
+        
+         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .card {
+        border-radius: 10px;
+        min-height: 200px;
+        font-weight: bold;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        /*
+        width: 32%; */
+        
+    }
+    
+    .card .textos:hover {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* display: grid;
+        grid-template-rows: 1fr auto; */
+        
+
+            
+    }
+    .textos {
+        font-size: 18px;
+
+    }
+    
+    .banner {
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        background-size: cover;
+        background-position: center center;
+       
+       
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: space-between
+
+         /*
+          width: 30px;
+          display: grid;
+         grid-template-rows: auto auto auto;
+         align-items: center; */
+
+
+    
+    
+    }
+    
+    .banner ul {
+        list-style: none;
+    }
+    
+    .banner ul li {
+        margin: 15px;
+        font-weight: bold;
+    }
+    
+    .banner .boton {
+        background: #FFD600;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        font-family: 'Amatic SC' ,'Roboto', sans-serif;
+        cursor: pointer;
+    }
+    
+    
+    @media screen and (max-width: 2000px) {
+
+        .principalIndex{
+            overflow: hidden;
+            background-image: url(./Imagenes/pizzas/pizzahome.png);
+            font-size: 30px;
+            height: auto;
+            width: auto;
+            max-width: 2000px;
+           padding: 90px 80px;
+            gap: 20px;
+            color: whitesmoke;
+            list-style: none;
+            box-sizing:content-box;
+        }
+        #ubicacion {
+            position:relative;
+            border:none;
+            height:400px;
+            width:100%;
+            padding-left: 50px;
+            display:inline-block;
+            overflow:hidden;
+            margin: 50px 50px;
+        }
+        
+    }
+
+    @media screen and (max-width: 1600px) {
+
+        .principalIndex{
+            overflow: hidden;
+            background-image: url(./Imagenes/pizzas/pizzahome.png);
+            font-size: 30px;
+            height: auto;
+            width: auto;
+            max-width: 1600px;
+           padding: 90px 80px;
+            gap: 20px;
+            color: whitesmoke;
+            list-style: none;
+            box-sizing:content-box;
+        }
+        #ubicacion {
+            position:relative;
+            border:none;
+            height:500px;
+            width:80%;
+            padding-left: 50px;
+            display:inline-block;
+            overflow:hidden;
+            margin: 50px 50px;
+        }
+
+        
+        
+
+    }
+    
+    @media screen and (max-width: 900px) {
+
+        .principalIndex{
+            overflow:hidden;
+            background-image: url(./Imagenes/pizzas/pizzahome.png);
+            font-size: 25px;
+            height: auto;
+            width: auto;
+            max-width: 900px;
+           /* padding: 420px 50px; en MQ 400px */
+           padding: 20px 40px;
+            gap: 5px;
+            color: whitesmoke;
+            list-style: none;
+            box-sizing:content-box;;
+        }
+        
+        .contenedor {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 0;
+            padding-left: 25px;
+    
+        /*
+            display: flex;
+            gap: 15px;*/
+            display: grid;
+            grid-template-columns: 2fr;
+            gap: 10px;
+        
+            
+        }
+        .contenedor-menu {
+       
+            width: 95%;
+             /* display: flex;
+            flex-wrap: wrap;
+            gap: 5px;*/
+    
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .banner {
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            background-size: cover;
+            background-position: center center;
+           
+          /* 
+            display: flex;
+           
+            flex-direction: column;
+            justify-content: space-between
+            
+            
+              display: grid;
+             grid-template-rows: auto auto auto;
+             align-items: center;*/
+    
+            
+              width: 95%;
+        
+        }
+
+    }
+    
+    @media screen and (max-width: 520px) {
+        
+        .contenedor {
+            width: 90%;
+            max-width: 520px;
+            min-width: 200px;
+            margin: auto;
+            padding-top: 450px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+    
+        /*
+            display: flex;
+            gap: 15px;*/
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        
+            
+        }
+            .contenedor-menu {
+       
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        
+         /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;*/
+    }
+    .banner {
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        background-size: cover;
+        background-position: center center;
+       
+      /* 
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: space-between
+        
+        
+          display: grid;
+         grid-template-rows: auto auto auto;
+         align-items: center;*/
+
+        
+          width: 90%; }
+        
+
+    }
+
+header {
+    width: 100%;
+    background: blueviolet;
+}
+#btnMenu{
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+
+}
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      
+  }
+  .menu li {
+border: 1px solid white;
+  }
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.asd {
+     width: auto;
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+  }
+
+ @media (max-width:520px) {
+    header label {
+        display: block;
+       }
+       .menu {
+           position:absolute;
+           background: blueviolet;
+           width: 100%;
+
+       }
+       .menu ul {
+           flex-direction: column;
+       }
+       .menu li {
+           border-top: 1px solid white;
+       }
+
+      
+  }
+
+.redSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: static;
+
+    padding: 5px 5px 5px 5px;
+}
+.portada {
+
+    display: grid;
+
+    max-height: 500px;
+    max-width: 900px;
+    
+}
+.principal{
+    overflow: hidden;
+    background-image: url(./Imagenes/pizzas/pizzahome.png);
+    font-size: 25px;
+    height: 90%;
+    width: 95%;
+    max-width: 1200px;
+   /* padding: 420px 50px; en MQ 400px */
+   padding: 90px 80px;
+    gap: 20px;
+    color: whitesmoke;
+    list-style: none;
+    box-sizing:content-box;
+}
+#ubicacion {
+    position:relative;
+    border:none;
+    height:400px;
+    width:80%;
+    padding-left: 50px;
+    display:inline-block;
+    overflow:hidden;
+    margin: 50px 50px;
+}
+.formEstilo {
+    color: black;
+    height: 700px; /*cambiar el height en MQ aumentar para mobile*/
+    display: flex;
+    justify-content: center;
+    align-items: center
+     
+}
+
+.formEstilo h1 {
+    text-align: center;
+}
+
+form{
+    background:whitesmoke ;
+    padding: 40px 0px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+form {
+    width: auto; /*cambiar el tamña MQ reducir mobile*/
+    margin: 2px;
+
+}
+form .grupo{
+    position: relative;
+    margin: 30px;/*cambiar el tamña MQ reducir mobile*/
+} 
+input{
+    background: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 100px; /*cambiar el tamña MQ reducir mobile*/
+    width: 150px;
+    align-items: center;
+}
+button {
+    background-color: blueviolet;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+     height: 40px;
+     font-size:20px;
+     cursor: pointer;
+}
+@media screen and (max-width:520px)
+ {
+     .form {
+         width: 80%;
+     }
+     form .grupo{
+    
+        margin: 10px;
+    } 
+    .formEstilo {
+        height: 1500px;
+    }
+    #ubicacion {
+    position:relative;
+    border:none;
+    width:90%;
+    padding-left: 1px;
+    display:inline-block;
+    overflow:hidden;
+    margin-top: 450px;
+    margin-left: 10px;
+}
+.principalIndex{
+    overflow: hidden;
+    background-image: url(./Imagenes/pizzas/pizzahome.png);
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    max-width: 1200px;
+   /* padding: 420px 50px; en MQ 400px */
+   padding: 420px 40px;
+    gap: 0px;
+    color: whitesmoke;
+    list-style: none;
+    box-sizing:content-box;
+}
+    
+}
